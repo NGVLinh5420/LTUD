@@ -49,10 +49,10 @@ namespace NGVL.DB
                             cmd.Parameters.AddWithValue(str, parameters[count]);
                             count++;
                         }
-                    }
-
-                    cmd.ExecuteNonQuery();
+                    }            
                 }
+
+                cmd.ExecuteNonQuery();
             }
 
             connection.Close();
